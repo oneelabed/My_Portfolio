@@ -1,0 +1,42 @@
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: var(--background-color);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    z-index: 1000;
+    opacity: 0.95;
+    
+}
+
+.logos {
+    display: flex;
+}
+
+.logo {
+    height: 35px;
+    width: 35px;
+    background-color: var(--background-color);
+}
+
+.pages {
+    display: flex;
+}  
+
+.nav-item1 {
+    padding-right: 40px;
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.nav-item2 {
+    padding-left: 40px;
+    text-decoration: none;
+    background-color: var(--background-color);
+}
