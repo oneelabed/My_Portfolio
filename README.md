@@ -3,7 +3,7 @@ Developed a responsive, themeable showcase of my work built using React, JavaScr
 
 Key features:-
 
-1. Responsive Design - Works smoothly on desktop and mobile devices.
+1. Interactive Elements - Includes: Rotating skill icons with CSS animations, Project cards with GitHub links.
 2. Dark/Light Mode Toggle - Custom CSS switch with smooth transitions.
 3. Dynamic Navigation Bar - Includes: Page links, and Social media icons.
 4. Multi-Page Routing - Uses React Router for seamless navigation.
