@@ -1,4 +1,4 @@
-# My-Portfolio
+# My_Portfolio
 Developed a responsive, themeable showcase of my work built using React, JavaScript and CSS. 
 
 Key features:-
