@@ -7,7 +7,7 @@ function Homepage({isDark}) {
   return(
     <div className="Homepage">
       <h1 id="home">Hi, I am<br></br>Oneel.</h1><br/>
-      <Link to="/Resume" id="link">My Resume</Link>
+      <Link to="/Resume" id="resume-block">My Resume</Link>
       <AboutMe/>
       <MySkills/>
       <Projects isDark={isDark}/>

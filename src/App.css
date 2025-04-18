@@ -9,7 +9,7 @@ html, body, * {
     margin: 0;
     background-color: var(--background-color);
     color: var(--text-color);
-    transition: background-color /*0.3s ease, color 0.3s ease*/;
+    transition: background-color;
     font-family: sans-serif;
 }
 
@@ -37,7 +37,7 @@ html {
     scroll-behavior: smooth;    
 }
 
-#link {
+#resume-block {
     text-decoration: none;
     color: var(--background-color);
     background-color: var(--text-color);
@@ -49,7 +49,7 @@ section {
     padding-top: 150px;
 }
 
-.tech, .frameworks{
+.skill-set{
     display: flex;
     justify-content: center;
     gap: 90px;

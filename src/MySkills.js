@@ -15,7 +15,7 @@ function MySkills() {
     <section id="MySkills">
       <h3>My Skills</h3><br/>
       <p className="paragraph">Technical languages</p><br/>
-      <div className="tech">
+      <div className="skill-set">
         <img className="skill-logo" src={pythonLogo} alt="python"></img>
         <img className="skill-logo" src={javaLogo} alt="java"></img>
         <img className="skill-logo" src={JSLogo} alt="JS"></img>
@@ -25,7 +25,7 @@ function MySkills() {
         <img className="skill-logo" src={CSSLogo} alt="CSS"></img>
       </div><br/>
       <p className="paragraph">Frameworks and technologies</p><br/>
-      <div className="frameworks">
+      <div className="skill-set">
         <img className="skill-logo" src={reactLogo} alt="react"></img>
         <img className="skill-logo" src={gitLogo} alt="git"></img>
         <img className="skill-logo" src={VSCodeLogo} alt="VSCode"></img>
