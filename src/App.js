@@ -3,7 +3,7 @@ import "./App.css"
 import Resume from "./Resume"
 import Homepage from "./Homepage"
 import Nav from "./Nav"
-import React, {useState} from "react"
+import {useState} from "react"
 import { Routes,Route } from "react-router-dom"
 
 function App() {

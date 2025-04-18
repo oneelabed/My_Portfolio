@@ -45,7 +45,7 @@ html {
     border-radius: 20px;
 }
 
-#ContactMe, #Projects, #MySkills, #AboutMe {
+section {
     padding-top: 150px;
 }
 

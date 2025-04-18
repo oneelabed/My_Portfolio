@@ -1,5 +1,5 @@
-import { useState } from "react"
 import "./Nav.css"
+import { useState } from "react"
 import githubLogoWhite from "./images/githubLogoWhite.png"
 import linkedinLogoWhite from "./images/linkedinLogoWhite.png"
 import githubLogoBlack from "./images/githubLogoBlack.png"
