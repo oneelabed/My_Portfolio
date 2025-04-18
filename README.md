@@ -9,7 +9,7 @@ Key features:-
 4. Multi-Page Routing - Uses React Router for seamless navigation.
 5. Modern UI - Clean, minimalist design with smooth scrolling.
 
-# Demo
+# Preview
 https://github.com/user-attachments/assets/9a021fe1-69ea-4e39-bc0a-4a31c7069413
 
 
