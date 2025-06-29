@@ -9,6 +9,7 @@ import reactLogo from "./images/reactLogo.png"
 import gitLogo from "./images/gitLogo.png"
 import VSCodeLogo from "./images/VSCodeLogo.png"
 import VSLogo from "./images/VSLogo.png"
+import SpringBootLogo from "./images/SpringBootLogo.png"
 
 function MySkills() {
   return(
@@ -30,6 +31,7 @@ function MySkills() {
         <img className="skill-logo" src={gitLogo} alt="git"></img>
         <img className="skill-logo" src={VSCodeLogo} alt="VSCode"></img>
         <img className="skill-logo" src={VSLogo} alt="VS"></img>
+        <img className="skill-logo" src={SpringBootLogo} alt="SpringBoot"></img>
       </div>
     </section>
   )
