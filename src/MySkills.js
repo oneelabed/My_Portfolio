@@ -31,7 +31,7 @@ function MySkills() {
         <img className="skill-logo" src={gitLogo} alt="git"></img>
         <img className="skill-logo" src={VSCodeLogo} alt="VSCode"></img>
         <img className="skill-logo" src={VSLogo} alt="VS"></img>
-        <img className="skill-logo" src={SpringBootLogo} alt="SpringBoot"></img>
+        <img className="skill-logo" src={SpringBootLogo} alt="SprigBoot"></img>
       </div>
     </section>
   )
