@@ -77,12 +77,15 @@ section {
 
 .paragraph {
     font: 0.5em sans-serif;
-    padding-left: 5px;
-    padding-top: 2px;
-    border: 3px solid var(--text-color);
-    border-radius: 10px;
 }
 
 #link {
     text-decoration: none;
+}
+
+#p1, #p2, #p3 {
+    padding-left: 5px;
+    padding-top: 2px;
+    border: 3px solid var(--text-color);
+    border-radius: 10px;
 }

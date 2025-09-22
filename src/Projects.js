@@ -7,7 +7,7 @@ function Projects({isDark}) {
   return(
     <section id="Projects">
       <h3>Projects</h3><br/>
-      <p className="paragraph">
+      <p className="paragraph" id="p1">
         <b>Yarka Market</b>
         <a className="nav-item2" href="https://github.com/oneelabed/YarkaMarket">
           <img className="logo" src={githubLogo} alt="github"></img>
@@ -38,7 +38,7 @@ function Projects({isDark}) {
           <b>Link</b><br/>
           <a id="link" href="https://yarkamarket.org">Yarka Market</a>
       </p><br/><br/>
-      <p className="paragraph">
+      <p className="paragraph" id="p2">
         <b>Rhino's import and marketing of doors</b>
         <a className="nav-item2" href="https://github.com/oneelabed/project_Archi">
           <img id="archi_github" className="logo" src={githubLogo} alt="github"></img>
@@ -52,7 +52,7 @@ function Projects({isDark}) {
           Added visualization features using external JavaScript libraries.<br/><br/>
           Created a feedback mechanism. 
       </p><br/><br/>
-      <p className="paragraph">
+      <p className="paragraph" id="p3">
         <b>My Portfolio</b>
         <a className="nav-item2" href="https://github.com/oneelabed/My_Portfolio">
           <img id="portfolio_github" className="logo" src={githubLogo} alt="github"></img>
