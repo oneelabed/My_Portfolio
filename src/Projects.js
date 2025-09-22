@@ -7,7 +7,38 @@ function Projects({isDark}) {
   return(
     <section id="Projects">
       <h3>Projects</h3><br/>
-      <p className="paragraph" id="p1">
+      <p className="paragraph">
+        <b>Yarka Market</b>
+        <a className="nav-item2" href="https://github.com/oneelabed/YarkaMarket">
+          <img className="logo" src={githubLogo} alt="github"></img>
+        </a><br/><br/>
+          A full-stack marketplace platform where users can sign up, create product listings, and connect with others.<br/><br/>
+
+          <b>🚀 Features</b><br/>
+          <b>User Authentication</b>: Secure login & signup with JWT.<br/>
+          <b>Create & Manage Listings</b>: Post, edit, and delete product listings with images.<br/>
+          <b>Real-Time Messaging</b>: WebSocket-based chat between buyers and sellers.<br/>
+          <b>Responsive UI</b>: Optimized for desktop and mobile.<br/>
+          <b>Deployment Ready</b>: Dockerized with separate frontend & backend hosting.<br/><br/>
+          <b>🛠️ Tech Stack</b><br/>
+          <b>Frontend</b>: React, CSS, Vercel<br/>
+          <b>Backend</b>: Spring Boot, REST APIs, WebSocket, Render<br/>
+          <b>Database</b>: PostgreSQL<br/>
+          <b>Authentication</b>: JWT<br/><br/>
+
+          <b>🔒 Authentication</b><br/>
+          JWT tokens are issued on login and required for protected routes.<br/><br/>
+
+          <b>🌐 Deployment</b><br/>
+          Frontend → Vercel<br/>
+          Backend → Render<br/>
+          Database → PostgreSQL (Neon)<br/>
+          Configured with a custom domain + SSL.<br/><br/>
+
+          <b>Link</b><br/>
+          <a id="link" href="https://yarkamarket.org">Yarka Market</a>
+      </p><br/><br/>
+      <p className="paragraph">
         <b>Rhino's import and marketing of doors</b>
         <a className="nav-item2" href="https://github.com/oneelabed/project_Archi">
           <img id="archi_github" className="logo" src={githubLogo} alt="github"></img>
@@ -21,7 +52,7 @@ function Projects({isDark}) {
           Added visualization features using external JavaScript libraries.<br/><br/>
           Created a feedback mechanism. 
       </p><br/><br/>
-      <p className="paragraph" id="p2">
+      <p className="paragraph">
         <b>My Portfolio</b>
         <a className="nav-item2" href="https://github.com/oneelabed/My_Portfolio">
           <img id="portfolio_github" className="logo" src={githubLogo} alt="github"></img>
