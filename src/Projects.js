@@ -19,6 +19,7 @@ function Projects({isDark}) {
           <b>Create & Manage Listings</b>: Post, edit, and delete product listings with images.<br/>
           <b>Real-Time Messaging</b>: WebSocket-based chat between buyers and sellers.<br/>
           <b>Responsive UI</b>: Optimized for desktop and mobile.<br/>
+          <b>Email Notifications</b>: Automatic email alerts when users receive new messages, and a Forgot password flow with secure email reset links.<br/>
           <b>Deployment Ready</b>: Dockerized with separate frontend & backend hosting.<br/><br/>
           <b>🛠️ Tech Stack</b><br/>
           <b>Frontend</b>: React, CSS, Vercel<br/>
