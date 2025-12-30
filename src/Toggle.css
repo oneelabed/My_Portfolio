@@ -1,58 +1,42 @@
 .toggle-container {
-    position: absolute;
-    margin-left: 700px;
-    background-color: var(--background-color);
+  display: flex;
+  align-items: center;
 }
   
-  /* Hide default checkbox */
 .toggle {
-    opacity: 0;
-    width: 0;
-    height: 0;
-    position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
 }
   
-  /* The switch - the box around the slider */
 .toggle + label {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-    cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: 0.4s;
 }
-  
-  /* The slider (the moving part) */
-.toggle + label::before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 60px;
-    left: 0;
-    bottom: 4px;
-    background-color: #ccc;
-    border-radius: 34px;
-    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2);
-}
-  
-  /* The circle that slides */
+
 .toggle + label::after {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
 }
   
-  /* When checked - slider background color */
-.toggle:checked + label::before {
-    background-color: #4CAF50;
+.toggle:checked + label {
+  background-color: var(--accent-color);
 }
   
-  /* When checked - circle position */
 .toggle:checked + label::after {
-    transform: translateX(26px);
+  transform: translateX(24px);
 }

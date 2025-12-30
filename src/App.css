@@ -1,91 +1,151 @@
 :root {
-    --background-color-light: rgb(228, 228, 255);
-    --text-color-light: black;
-    --background-color-dark: black;
-    --text-color-dark: rgb(228, 228, 255);
+    --light-bg: rgb(228, 228, 255);
+    --light-text: black;
+    --light-card: #ffffff;
+
+    --dark-bg: #121212;
+    --dark-text: rgb(228, 228, 255);
+    --dark-card: #1e1e1e;
 }
-  
-html, body, * {
-    margin: 0;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    transition: background-color;
+
+* {
+    margin-left: 0px;
+    box-sizing: border-box;
     font-family: sans-serif;
 }
 
+.App {
+    min-height: 100vh; 
+    width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
 .App.light {
-    --background-color: var(--background-color-light);
-    --text-color: var(--text-color-light);
+    --bg-color: var(--light-bg);
+    --text-color: var(--light-text);
+    --card-bg: var(--light-card);
+    --border-color: black;
 }
 
 .App.dark {
-    --background-color: var(--background-color-dark);
-    --text-color: var(--text-color-dark);
-
-}
-
-.Homepage {
-    font: 3em sans-serif;
-    position: relative;
-    padding-top: 100px;
-    padding-left: 200px;
-    color: var(--text-color);
-
+    --bg-color: var(--dark-bg);
+    --text-color: var(--dark-text);
+    --card-bg: var(--dark-card);
+    --border-color: rgb(228, 228, 255);
 }
 
 html {
     scroll-behavior: smooth;    
 }
 
-#resume-block {
-    text-decoration: none;
-    color: var(--background-color);
-    background-color: var(--text-color);
-    border: 10px solid var(--text-color);
-    border-radius: 20px;
+.Homepage {
+    font: 2.5em sans-serif;
+    position: relative;
+    padding-top: 100px;
+    padding-left: 150px;
 }
 
 section {
     padding-top: 150px;
 }
 
+#resume-block {
+    text-decoration: none;
+    color: var(--bg-color);
+    background-color: var(--text-color);
+    border: 3px solid var(--text-color);
+    border-radius: 15px;
+    padding: 10px 25px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: transform 0.2s;
+}
+
+#resume-block:hover {
+    transform: scale(1.05);
+}
+
 .skill-set{
     display: flex;
     justify-content: center;
     gap: 90px;
+    margin-left: 00px;
+    flex-wrap: wrap;
 }
 
 .skill-logo {
     height: 100px;
     width: 100px;
+    object-fit: contain;
 }
 
 @keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 .skill-logo:hover {
-    width: 100px;
-    height: 100px;
     animation: rotation 2s infinite linear;
 }
 
 .paragraph {
     font: 0.5em sans-serif;
+    text-align: center;
 }
 
-#link {
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    padding-right: 50px;
+}
+
+.project-card {
+    background-color: var(--card-bg);
+    
+    color: var(--text-color);
+    
+    border: 2px solid var(--border-color);
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.5em; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.card-header b {
+    font-size: 1.4em;
+}
+
+.card-body ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.card-body li {
+    margin-bottom: 5px;
+}
+
+.highlight-link {
+    color: var(--accent-color);
+    font-weight: bold;
     text-decoration: none;
-}
-
-#p1, #p2, #p3 {
-    padding-left: 5px;
-    padding-top: 2px;
-    border: 3px solid var(--text-color);
-    border-radius: 10px;
 }

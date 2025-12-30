@@ -27,8 +27,7 @@ function Nav({isDark, setDark}) {
   
   return(
     <div>
-      <nav className="nav"> 
-        <Toggle handleChange={handleChange} isChecked={isDark} />
+      <nav className="nav">    
         <div className="logos">
           <a className="nav-item2" href="https://github.com/oneelabed">
             <img className="logo" src={githubLogo} alt="github"></img>
@@ -37,6 +36,7 @@ function Nav({isDark, setDark}) {
             <img className="logo" src={linkedinLogo} alt="linkedin"></img>
           </a>
         </div>
+        <Toggle handleChange={handleChange} isChecked={isDark} />
         <div className="pages">
           <a href="/#" className="nav-item1">Homepage</a>
           <a href="/#AboutMe " className="nav-item1">About Me</a>
