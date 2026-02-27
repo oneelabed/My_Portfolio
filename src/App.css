@@ -96,6 +96,11 @@ section {
     text-align: center;
 }
 
+.about-me-li {
+    font: 0.5em sans-serif;
+    margin-left: 150px;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));

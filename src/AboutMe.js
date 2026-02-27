@@ -2,10 +2,14 @@ function AboutMe() {
   return (
     <section id="AboutMe">
       <h3>About Me</h3><br/>
-        <p className="paragraph">Motivated 3rd year Software Engineering student with 
-          strong hands-on experience in full-stack development (React, Spring Boot, PostgreSQL).<br/>
-          Built and deployed production-level projects with real users.
-        </p>
+      <p style={{font: "0.6em sans-serif" , marginLeft: "50px"}}>Third-year Software Engineering student specializing in full-stack architecture and backend systems.</p><br/>
+      <ul className="about-me-li">
+        <li>Designed and deployed a production marketplace platform</li>
+        <li>Implemented JWT authentication, real-time messaging (WebSockets), and secure password recovery</li>
+        <li>Deployed using Docker, Vercel & Render with custom domain and SSL</li>
+        <li>Strong foundation in OOP, Data Structures, OS, and REST API design</li>
+        <li>Growing focus on AI engineering and scalable microservices</li>
+      </ul>
     </section>
   )   
 }
