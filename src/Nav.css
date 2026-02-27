@@ -67,3 +67,25 @@
     align-items: center;
     background-color: transparent;
 }
+
+@media (max-width: 768px) {
+    .nav {
+        height: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logos {
+        margin-left: 0;
+        gap: 20px;
+    }
+
+    .pages {
+        gap: 15px;
+        font-size: 0.8rem;
+        justify-content: center;
+        width: 100%;
+    }
+}

@@ -2,7 +2,7 @@ import { Suspense, useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { useGLTF, Float } from '@react-three/drei';
 
-function LaptopModel() {
+function LaptopModel({ isMobile }) {
   const { scene } = useGLTF('/laptop.glb'); 
   const meshRef = useRef();
   useFrame((state, delta) => {
@@ -14,7 +14,7 @@ function LaptopModel() {
     <primitive 
       ref={meshRef}
       object={scene} 
-      scale={4} 
+      scale={isMobile ? 2.5 : 4} 
       position={[0, 0, 0.1]} 
       rotation={[0.3, 0, 0]} 
     />
@@ -22,20 +22,31 @@ function LaptopModel() {
 }
 
 export default function Hero3D() {
+  const isMobile = window.innerWidth <= 768;
+
+  const containerStyle = isMobile ? {
+    width: '100%',
+    height: '300px',
+    position: 'relative',
+    margin: '20px 0'
+  } : {
+    width: '50%',
+    height: '500px',
+    background: 'transparent',
+    position: "absolute",
+    top: '90px',
+    right: '50px'
+  };
+
   return (
-    <div style={{ width: '50%',
-                  height: '500px',
-                  background: 'transparent',
-                  position: "absolute",
-                  top: '90px',
-                  right: '50px'}}>
+    <div style={containerStyle}>
       <Canvas camera={{ position: [0, 0, 5], fov: 45 }}>
         <ambientLight intensity={0.5} />
         <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
         
         <Suspense fallback={null}>
           <Float speed={1.5} rotationIntensity={0.5} floatIntensity={1}>
-            <LaptopModel />
+            <LaptopModel isMobile={isMobile}/>
           </Float>
         </Suspense>
 
