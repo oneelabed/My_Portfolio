@@ -96,7 +96,7 @@ function Projects({isDark}) {
             <div className="card-section">
               <b>🔒 Authentication</b>
               <p>Unique API Keys are generated upon user registration and required in the Authorization header
-                 to verify identity for all protected routes.
+                to verify identity for all protected routes.
               </p>
             </div>
           </div>
