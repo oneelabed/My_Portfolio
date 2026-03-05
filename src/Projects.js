@@ -63,47 +63,41 @@ function Projects({isDark}) {
 
         <div className="project-card">
           <div className="card-header">
-            <b>Rhino's import and marketing of doors</b>
-            <a className="icon-link" href="https://github.com/oneelabed/project_Archi">
-              <img id="archi_github" className="logo" src={githubLogo} alt="github"></img>
+            <b>RSS Aggregator</b>
+            <a className="icon-link" href="https://github.com/oneelabed/RSSAggregator">
+              <img className="logo" src={githubLogo} alt="github"></img>
             </a>
           </div>
           <div className="card-body">
-            <p>Developed an interactive web app for selecting, customizing, and ordering doors using <b>HTML/CSS</b>, and <b>JavaScript</b>.</p>
+            <p>A high-performance, concurrent backend service built in Go that allows users to register,
+               add RSS feeds, and automatically scrape posts into a searchable database.</p>
             
             <div className="card-section">
-              <b>Key features:-</b>
+              <b>🚀 Features</b>
               <ul>
-                <li>Integrated interactive forms for capturing user details and order preferences,
-                including real-time updates for door models, sizes, colors, and quantities.</li>
-                <li>Built modular and reusable scripts for handling client data and enhancing
-                page responsiveness.</li>
-                <li>Added visualization features using external JavaScript libraries.</li>
-                <li>Created a feedback mechanism.</li>
+                <li><b>User Authentication</b>: Secure identification using unique API Keys for all protected routes.</li>
+                <li><b>Concurrent Scraper</b>: Background worker pool using goroutines and WaitGroups to fetch multiple feeds simultaneously.</li>
+                <li><b>Full-Text Search</b>: Optimized data discovery with PostgreSQL GIN indexes, enabling fast, case-insensitive keyword filtering.</li>
+                <li><b>Automated Fetching</b>: Background worker that dynamically prioritizes feeds based on their last fetched timestamp.</li>
+                <li><b>Type-Safe Database</b>: Automated query generation with SQLC and managed schema evolution via Goose migrations.</li>
               </ul>
             </div>
-          </div>
-        </div>
 
-        <div className="project-card">
-          <div className="card-header">
-             <b>My Portfolio</b>
-            <a className="icon-link" href="https://github.com/oneelabed/My_Portfolio">
-              <img id="portfolio_github" className="logo" src={githubLogo} alt="github"></img>
-            </a>
-          </div>
-          <div className="card-body">
-            <p>Developed a responsive, themeable showcase of my work built using <b>React</b>, <b>JavaScript</b> and <b>CSS</b>.</p>
-            
             <div className="card-section">
-              <b>Key features:-</b>
-              <ul>
-                <li>Interactive Elements - Includes: Rotating skill icons with CSS animations, Project cards with GitHub links.</li>
-                <li>Dark/Light Mode Toggle - Custom CSS switch with smooth transitions.</li>
-                <li>Dynamic Navigation Bar - Includes: Page links, and Social media icons</li>
-                <li>Multi-Page Routing - Uses React Router for seamless navigation.</li>
-                <li>Modern UI - Clean, minimalist design with smooth scrolling.</li>
-              </ul>
+              <b>🛠️ Tech Stack</b>
+              <p>
+                {/* <b>Frontend</b>: React, CSS, Vercel<br/> */}
+                <b>Backend</b>: Go (Golang), Chi Router, SQLC, Goose<br/>
+                <b>Database</b>: PostgreSQL<br/>
+                <b>Authentication</b>: API Key
+              </p>
+            </div>
+
+            <div className="card-section">
+              <b>🔒 Authentication</b>
+              <p>Unique API Keys are generated upon user registration and required in the Authorization header
+                 to verify identity for all protected routes.
+              </p>
             </div>
           </div>
         </div>
