@@ -24,21 +24,21 @@ function MySkills({isDark}) {
       <p className="paragraph">Technical languages</p><br/>
       <div className="skill-set">
         <img className="skill-logo" src={pythonLogo} alt="python"></img>
-        <img className="skill-logo" src={javaLogo} alt="java"></img>
         <img className="skill-logo" src={JSLogo} alt="JS"></img>
-        <img className="skill-logo" src={CLogo} alt="C"></img>
+        <img className="skill-logo" src={javaLogo} alt="java"></img>
         <img className="skill-logo" src={goLogo} alt="go"></img>
+        <img className="skill-logo" src={CLogo} alt="C"></img>
         <img className="skill-logo" src={sqlLogo} alt="sql"></img>
       </div><br/>
       <p className="paragraph">Frameworks and technologies</p><br/>
       <div className="skill-set">
-        <img className="skill-logo" src={reactLogo} alt="react"></img>
+        <img className="skill-logo" src={nextjsLogo} alt="nextjs"></img>
+        <img className="skill-logo" src={reactLogo} alt="react"></img>       
+        <img className="skill-logo" src={SpringBootLogo} alt="SpringBoot"></img>
+        <img className="skill-logo" src={postgreLogo} alt="postgre"></img>
         <img className="skill-logo" src={gitLogo} alt="git"></img>
         <img className="skill-logo" src={VSCodeLogo} alt="VSCode"></img>
         <img className="skill-logo" src={VSLogo} alt="VS"></img>
-        <img className="skill-logo" src={SpringBootLogo} alt="SpringBoot"></img>
-        <img className="skill-logo" src={nextjsLogo} alt="nextjs"></img>
-        <img className="skill-logo" src={postgreLogo} alt="postgre"></img>
       </div>
     </section>
   )
