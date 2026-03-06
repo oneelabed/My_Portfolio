@@ -12,6 +12,7 @@ import VSLogo from "./images/VSLogo.png"
 import SpringBootLogo from "./images/SpringBootLogo.png"
 import nextjsLogoBlack from "./images/nextjsLogoBlack.png"
 import nextjsLogoWhite from "./images/nextjsLogoWhite.png"
+import postgreLogo from "./images/postgreLogo.png"
 
 function MySkills({isDark}) {
   const sqlLogo = isDark ? sqlLogoWhite : sqlLogoBlack
@@ -37,6 +38,7 @@ function MySkills({isDark}) {
         <img className="skill-logo" src={VSLogo} alt="VS"></img>
         <img className="skill-logo" src={SpringBootLogo} alt="SpringBoot"></img>
         <img className="skill-logo" src={nextjsLogo} alt="nextjs"></img>
+        <img className="skill-logo" src={postgreLogo} alt="postgre"></img>
       </div>
     </section>
   )
