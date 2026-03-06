@@ -11,7 +11,7 @@ function Homepage({isDark}) {
       <Hero3D />
       <Link to="/Resume" id="resume-block">My Resume</Link>
       <AboutMe/>
-      <MySkills/>
+      <MySkills isDark={isDark}/>
       <Projects isDark={isDark}/>
     </div>
   )
