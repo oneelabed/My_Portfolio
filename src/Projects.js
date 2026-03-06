@@ -17,7 +17,7 @@ function Projects({isDark}) {
             </a>
           </div>
           <div className="card-body">
-            <p>A full-stack marketplace platform where users can sign up, create product listings, and connect with others.</p>
+            <p>A full-stack marketplace platform where users can sign up, create product listings, and connect with others.</p><br/>
             
             <div className="card-section">
               <b>🚀 Features</b>
@@ -29,30 +29,34 @@ function Projects({isDark}) {
                 <li><b>Email Notifications</b>: Automatic email alerts when users receive new messages, and a Forgot password flow with secure email reset links.</li>
                 <li><b>Deployment Ready</b>: Dockerized with separate frontend & backend hosting.</li>
               </ul>
-            </div>
+            </div> <br/>
 
             <div className="card-section">
               <b>🛠️ Tech Stack</b>
-              <p>
-                <b>Frontend</b>: React, CSS, Vercel<br/>
-                <b>Backend</b>: Spring Boot, REST APIs, WebSocket, Render<br/>
-                <b>Database</b>: PostgreSQL<br/>
-                <b>Authentication</b>: JWT
-              </p>
-            </div>
+              <ul>
+                <li><b>Frontend</b>: React, CSS, Vercel</li>
+                <li><b>Backend</b>: Spring Boot, REST APIs, WebSocket, Render</li>
+                <li><b>Database</b>: PostgreSQL</li>
+                <li><b>Authentication</b>: JWT</li>
+              </ul>
+            </div> <br/>
 
             <div className="card-section">
               <b>🔒 Authentication</b>
-              <p>JWT tokens are issued on login and required for protected routes.</p>
-            </div>
+              <ul>
+                <li>JWT tokens are issued on login and required for protected routes.</li>
+              </ul>
+            </div> <br/>
 
             <div className="card-section">
               <b>🌐 Deployment</b>
-              <p>Frontend → Vercel<br/>
-              Backend → Render<br/>
-              Database → PostgreSQL (Neon)<br/>
-              Configured with a custom domain + SSL.</p>
-            </div>
+              <ul>
+                <li>Frontend → Vercel</li>
+                <li>Backend → Render</li>
+                <li>Database → PostgreSQL (Neon)</li>
+                <li>Configured with a custom domain + SSL</li>
+              </ul>
+            </div> <br/>
 
             <div className="card-footer">
               <b>Link: </b>
@@ -70,7 +74,7 @@ function Projects({isDark}) {
           </div>
           <div className="card-body">
             <p>A high-performance, concurrent backend service built in Go that allows users to register,
-               add RSS feeds, and automatically scrape posts into a searchable database.</p>
+               add RSS feeds, and automatically scrape posts into a searchable database.</p> <br/>
             
             <div className="card-section">
               <b>🚀 Features</b>
@@ -81,24 +85,26 @@ function Projects({isDark}) {
                 <li><b>Automated Fetching</b>: Background worker that dynamically prioritizes feeds based on their last fetched timestamp.</li>
                 <li><b>Type-Safe Database</b>: Automated query generation with SQLC and managed schema evolution via Goose migrations.</li>
               </ul>
-            </div>
+            </div> <br/>
 
             <div className="card-section">
               <b>🛠️ Tech Stack</b>
-              <p>
+              <ul>
                 {/* <b>Frontend</b>: React, CSS, Vercel<br/> */}
-                <b>Backend</b>: Go (Golang), Chi Router, SQLC, Goose<br/>
-                <b>Database</b>: PostgreSQL<br/>
-                <b>Authentication</b>: API Key
-              </p>
-            </div>
+                <li><b>Backend</b>: Go (Golang), Chi Router, SQLC, Goose</li>
+                <li><b>Database</b>: PostgreSQL</li>
+                <li><b>Authentication</b>: API Key</li>
+              </ul>
+            </div> <br/>
 
             <div className="card-section">
               <b>🔒 Authentication</b>
-              <p>Unique API Keys are generated upon user registration and required in the Authorization header
-                to verify identity for all protected routes.
-              </p>
-            </div>
+              <ul>
+                <li>Unique API Keys are generated upon user registration and required in the Authorization header
+                  to verify identity for all protected routes.
+                </li>
+              </ul>
+            </div> <br/>
           </div>
         </div>
 
