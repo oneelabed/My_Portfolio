@@ -67,14 +67,14 @@ function Projects({isDark}) {
 
         <div className="project-card">
           <div className="card-header">
-            <b>RSS Aggregator</b>
-            <a className="icon-link" href="https://github.com/oneelabed/RSSAggregator">
+            <b>Israel Conflict Monitor (ICM)</b>
+            <a className="icon-link" href="https://github.com/oneelabed/IsraelConflictMonitor">
               <img className="logo" src={githubLogo} alt="github"></img>
             </a>
           </div>
           <div className="card-body">
-            <p>A high-performance, concurrent backend service built in Go that allows users to register,
-               add RSS feeds, and automatically scrape posts into a searchable database.</p> <br/>
+            <p>A high-performance, multi-lingual intelligence engine built in Go. ICM provides a unified, real-time dashboard for verified news sources,
+              specifically designed to filter and aggregate critical updates during the ongoing conflict in Israel.</p> <br/>
             
             <div className="card-section">
               <b>🚀 Features</b>
@@ -90,7 +90,7 @@ function Projects({isDark}) {
             <div className="card-section">
               <b>🛠️ Tech Stack</b>
               <ul>
-                {/* <b>Frontend</b>: React, CSS, Vercel<br/> */}
+                <li><b>Frontend</b>: Next.js 14, TypeScript, Tailwind CSS</li>
                 <li><b>Backend</b>: Go (Golang), Chi Router, SQLC, Goose</li>
                 <li><b>Database</b>: PostgreSQL</li>
                 <li><b>Authentication</b>: API Key</li>
@@ -105,6 +105,20 @@ function Projects({isDark}) {
                 </li>
               </ul>
             </div> <br/>
+            <div className="card-section">
+              <b>🌐 Deployment</b>
+              <ul>
+                <li>Frontend → Vercel</li>
+                <li>Backend → Render</li>
+                <li>Database → PostgreSQL (Neon)</li>
+                <li>Configured with a custom domain + SSL</li>
+              </ul>
+            </div> <br/>
+
+            <div className="card-footer">
+              <b>Link: </b>
+              <a className="highlight-link" href="https://israelconflictmonitor.org">Israel Conflict Monitor</a>
+            </div>
           </div>
         </div>
 
